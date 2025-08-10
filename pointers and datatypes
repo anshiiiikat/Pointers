@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i = 10;
+    float f = 10.5;
+    double d = 30.765;
+    bool c=0;
+    int* iptr = &i;
+    float* fptr = &f;
+    double* dptr = &d;
+    bool* cptr=&c;
+    
+    cout << "Original Addresses:\n";
+    cout << "int pointer: " << iptr << endl;
+    cout << "float pointer: " << fptr << endl;
+    cout << "double pointer: " << dptr << endl;
+    cout<<"boolean pointer: "<<cptr<<endl;
+
+    iptr++;
+    fptr++;
+    dptr++;
+    cptr++;
+    
+    cout << "\nAfter Incrementing:\n";
+    cout << "int pointer: " << iptr << endl;
+    cout << "float pointer: " << fptr << endl;
+    cout << "double pointer: " << dptr << endl;
+    cout<<"Boolean pointer:"<<cptr<<endl;
+   
+    return 0;
+}
+// output
+Original Addresses:
+int pointer: 0x7fffaecff70c
+float pointer: 0x7fffaecff708
+double pointer: 0x7fffaecff700
+boolean pointer: 0x7fffaecff6ff
+
+After Incrementing:
+int pointer: 0x7fffaecff710
+float pointer: 0x7fffaecff70c
+double pointer: 0x7fffaecff708
+Boolean pointer:0x7fffaecff700
