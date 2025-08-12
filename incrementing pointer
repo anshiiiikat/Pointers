@@ -1,0 +1,75 @@
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a=5;
+    int *aptr=&a;
+   
+    float f=1.2345;
+    float *fptr=&f;
+   
+    double d=1.3456789;
+    double *dptr=&d;
+   
+    char c='A';
+    char *cptr=&c;
+   
+    bool b=1;
+    bool *bptr=&b;
+   
+   
+    cout<<"Incrementing Integer"<<endl;
+    cout<<aptr<<endl;
+    aptr++;
+    cout<<aptr<<endl;
+    cout<<endl;
+   
+    cout<<"Incrementing Float"<<endl;
+    cout<<fptr<<endl;
+    fptr++;
+    cout<<fptr<<endl;
+    cout<<endl;
+   
+    cout<<"Incrementing Double"<<endl;
+    cout<<dptr<<endl;
+    dptr++;
+    cout<<dptr<<endl;
+    cout<<endl;
+   
+    cout<<"Incrementing Character"<<endl;
+    cout<<cptr<<endl;
+    cptr++;
+    cout<<cptr<<endl;
+    cout<<endl;
+   
+    cout<<"Incrementing Boolean"<<endl;
+    cout<<bptr<<endl;
+    bptr++;
+    cout<<bptr<<endl;
+    cout<<endl;
+    return 0;
+}
+
+/* output
+Incrementing Integer
+0x7ffde62399c4
+0x7ffde62399c8
+
+Incrementing Float
+0x7ffde62399c0
+0x7ffde62399c4
+
+Incrementing Double
+0x7ffde62399b8
+0x7ffde62399c0
+
+Incrementing Character
+A�&���?P�u�?
+�&���?P�u�?
+
+Incrementing Boolean
+0x7ffde62399b6
+0x7ffde62399b7
+*/
