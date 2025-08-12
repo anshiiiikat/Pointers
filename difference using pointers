@@ -1,0 +1,20 @@
+//Anshika Tewari
+//24070123017
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A[10]={10,20,30,40,50};
+   
+    int *ap1=&A[2];
+    int *ap2=&A[4];
+   
+    int diff=*ap2-*ap1;
+    cout<<"Difference is: "<<diff;
+    return 0;
+}
+
+/* output
+Difference is: 20
+*/
