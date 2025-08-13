@@ -14,8 +14,8 @@ The size of pointer in a system is equal for every pointer no matter what type o
 8 bytes for a 64-bit System 4 bytes for a 32-bit System The logic is simple: pointers store the addresses of the memory and in a computer, the maximum width of a memory address is determined by the CPU architecture.
 # Algorithms
 ### Incrementing Data Types Using Pointers
-Initialization
-Declare and initialize variables of the following data types:
+1.Initialization
+2.Declare and initialize variables of the following data types:
 
 int a
 
@@ -27,7 +27,7 @@ char c
 
 bool b
 
-Pointer Assignment
+3.Pointer Assignment
 For each variable, declare a pointer of the corresponding type and assign it the memory address of that variable.
 
 int *aptr = &a;
@@ -40,7 +40,7 @@ char *cptr = &c;
 
 bool *bptr = &b;
 
-Process and Display
+4.Process and Display
 For each pointer (aptr, fptr, dptr, cptr, bptr):
 
 a. Print Initial Address: Display the current memory address stored in the pointer.
@@ -51,53 +51,53 @@ c. Print New Address: Display the new memory address now stored in the pointer t
 
 End
 ### Revering An Array
-Start.
+1.Start.
 
-Initialize an integer array with elements {10, 20, 30, 40, 50}.
+2.Initialize an integer array with elements {10, 20, 30, 40, 50}.
 
-Create a pointer and point it to the last element of the array (arr + 4).
+3.Create a pointer and point it to the last element of the array (arr + 4).
 
-Print "Reversed array is:". using ---For i from 4 down to 0:
+4.Print "Reversed array is:". using ---For i from 4 down to 0:
 
-Print the value pointed to by the pointer.
+5.Print the value pointed to by the pointer.
 
-Decrement the pointer to move to the previous element.
+6.Decrement the pointer to move to the previous element.
 
-End.
+7.End.
 
 ### Finding Difference Of Array Elements
-Start.
+1.Start.
 
-Initialize an integer array A with {10, 20, 30, 40, 50}.
+2.Initialize an integer array A with {10, 20, 30, 40, 50}.
 
-Create pointer ap1 pointing to the 3rd element (A[2]).
+3.Create pointer ap1 pointing to the 3rd element (A[2]).
 
-Create pointer ap2 pointing to the 5th element (A[4]).
+4.Create pointer ap2 pointing to the 5th element (A[4]).
 
-Calculate diff = *ap2 - *ap1.
+5.Calculate diff = *ap2 - *ap1.
 
-Display "Difference is:" followed by diff.
+6.Display "Difference is:" followed by diff.
 
-End.
+7.End.
 
 ### Reading/Printing A String
-Start.
+1.Start.
 
-Declare a character array str of size 20.
+2.Declare a character array str of size 20.
 
-Prompt the user to enter a string and store it in str.
+3.Prompt the user to enter a string and store it in str.
 
-Initialize a pointer ptr to point to str.
+4.Initialize a pointer ptr to point to str.
 
-Print "String is:".
+5.Print "String is:".
 
-While the character pointed to by ptr is not '\0' (null terminator):
+6.While the character pointed to by ptr is not '\0' (null terminator):
 
-Print the character pointed to by ptr.
+7.Print the character pointed to by ptr.
 
-Increment ptr to move to the next character.
+8.Increment ptr to move to the next character.
 
-End.
+9.End.
 # Uses Of Pointers
 Pointers are a useful concept in C++ that allow direct access to memory addresses, providing greater control over memory and data manipulation. Below are some primary uses of pointers in C++:
 
